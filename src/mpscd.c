@@ -39,6 +39,7 @@ int handle_client(void* data)
     char rel_message[555];
     snprintf(rel_message, 555, "%d %s", messages++, message);
     printf("%s\n", rel_message);
+    fflush(stdout);
   }
   return 0;
 }
